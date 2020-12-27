@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Предсказываем цены</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <a href="/"><img class="d-block mx-auto mb-4" src="/static/logo.png" alt="" width="72" height="72"></a>
+        <a href="/"><h1>Латвия. Рига</h1></a>
+        <h2>Предсказываем цены на недвижимость</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h5 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Информация о проекте</span>
+          </h5>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Выполнил</h6>
+                <small class="text-muted">Студент</small>
+              </div>
+              <span class="text-muted">Волков Станислав</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div>
+                <h6 class="my-0">Группа</h6>
+                <small class="text-muted">1 курс, академия MADE</small>
+              </div>
+              <span class="text-muted">ML-12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Курс</h6>
+                <small class="text-muted">о предмете</small>
+              </div>
+              <span class="text-muted">Машинное обучение</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div>
+                <h6 class="my-0">Задание</h6>
+                <small class="text-muted">ДЗ №4</small>
+              </div>
+              <span class="text-success">Прикладной ML</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <div>
+                <h6 class="my-0">Используемая модель</h6>
+                <small class="text-muted">регрессия</small>
+              </div>
+              <span class="text-muted">RandomForest</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div>
+                <h6 class="my-0">Инструменты</h6>
+                <small class="text-muted">язык - Python</small>
+              </div>
+              <span class="text-muted">Flask, Pandas, Sklearn</span>
+            </li>
+          </ul>
+        </div>
+
+        {% block container %} {% endblock %}
+      </div>
+
+
+    </div>
+    <div class="row w-75 h-75 mx-auto">
+        {% block map %} {% endblock %}
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Предсказываем цену</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="/">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+  </body>
+</html>

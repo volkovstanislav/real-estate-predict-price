@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<div class="col-md-8 order-md-1">
+  <h4 class="mb-3">Укажите точную информацию об объекте</h4>
+  <form class="needs-validation" action="/predict/" method="POST">
+    {{ form.csrf_token }}
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label>Продажа / Аренда</label>
+        {{ form.ad_type(class_="form-control", id="firstName") }}
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Площадь квартиры</label>
+        {{ form.area(class_="form-control") }}
+        <div class="invalid-feedback">
+          Valid last name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label>Широта <small class="text-muted">(значение от -90 до 90)</small> </label>
+        {{ form.lat(class_="form-control") }}
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Долгота <small class="text-muted">(значение от -180 до 180)</small> </label>
+        {{ form.lon(class_="form-control") }}
+        <div class="invalid-feedback">
+          Valid last name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label>Этаж</label>
+        {{ form.floor(class_="form-control") }}
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Этажей в доме</label>
+        {{ form.total_floors(class_="form-control") }}
+        <div class="invalid-feedback">
+          Valid last name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label>Район из списка:</label>
+        {{ form.dist(class_="form-control") }}
+        <div class="invalid-feedback">
+          Please select a valid country.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Кол-во комнат</label>
+        {{ form.rooms(class_="form-control") }}
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+    </div>
+    <hr class="mb-4">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <label>Серия дома</label>
+        {{ form.seria(class_="form-control") }}
+        <div class="invalid-feedback">
+          Please select a valid country.
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label>Тип дома</label>
+        {{ form.type(class_="form-control") }}
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label>Дополнительные удобства</label>
+        {{ form.cond(class_="form-control") }}
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+    </div>
+    <hr class="mb-4">
+    <div class="mb-4">
+      <label>Первый / Последний этаж</label>
+        <div class="custom-control custom-checkbox">
+          {{ form.first_floor(class_="form-check-input") }}
+          {{ form.first_floor.label }}
+        </div>
+        <div class="custom-control custom-checkbox">
+          {{ form.last_floor(class_="form-check-input") }}
+          {{ form.last_floor.label }}
+        </div>
+    </div>
+    <hr class="mb-4">
+    <button class="btn btn-primary btn-lg btn-block" type="submit">Предсказать</button>
+  </form>
+</div>
+
+{% endblock %}
+
