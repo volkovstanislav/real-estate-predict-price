@@ -122,7 +122,10 @@ def render_predict():
             df = df.iloc[(df['price'] - predict).abs().values.argsort()[:10]]
             df = df[["area", "floor", "total_floors", "price", "lat", "lon"]]
 
-            start_coords = (df["lat"].mean(), df["lon"].mean())
+            if df.shape[0] != 0:
+                start_coords = (df["lat"].mean(), df["lon"].mean())
+            else:
+                start_coords = (24.1, 56.9)
             riga_map = folium.Map(location=start_coords, zoom_start=14)
             for k, v in df.iterrows():
                 text = f"area: {v['area']}, floor:{v['area']}, price:{v['price']}"
