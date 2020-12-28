@@ -47,33 +47,36 @@ district = [('district_Aplokciems', 'Aplokciems'),
  ('district_Šampēteris-Pleskodāle', 'Šampēteris-Pleskodāle'),
  ('district_Šķirotava', 'Šķirotava')]
 
-rooms = [
-    ('rooms_1', '1'), ('rooms_2', '2'), ('rooms_3', '3'),
-    ('rooms_4', '4'), ('rooms_5', '5'), ('rooms_6', '6'),
-]
+rooms = [('rooms_1', '1'),
+ ('rooms_2', '2'),
+ ('rooms_3', '3'),
+ ('rooms_4', '4'),
+ ('rooms_5', '5'),
+ ('rooms_6', '6')]
 
-house_seria = [
-    ('house_seria_103.', 'seria_103.'), ('house_seria_104.', 'seria_104.'),
-    ('house_seria_119.', 'seria_119.'), ('house_seria_467.', 'seria_467.'),
-    ('house_seria_602.', 'seria_602.'), ('house_seria_Hrušč.', 'seria_Hrušč.'),
-    ('house_seria_Jaun.', 'seria_Jaun.'), ('house_seria_LT proj.', 'seria_LT proj.'),
-    ('house_seria_M. ģim.', 'M. ģim.'), ('house_seria_P. kara', 'P. kara'),
-    ('house_seria_Priv. m.', 'Priv. m.'), ('house_seria_Renov.', 'Renov.'),
-    ('house_seria_Specpr.', 'Specpr.'), ('house_seria_Staļina', 'Staļina'),
-    ('house_seria_Čehu pr.', 'Čehu pr.')
-]
+house_seria = [('house_seria_103.', '103.'),
+ ('house_seria_104.', '104.'),
+ ('house_seria_119.', '119.'),
+ ('house_seria_467.', '467.'),
+ ('house_seria_602.', '602.'),
+ ('house_seria_Hrušč.', 'Hrušč.'),
+ ('house_seria_Jaun.', 'Jaun.'),
+ ('house_seria_LT proj.', 'LT proj.'),
+ ('house_seria_M. ģim.', 'M. ģim.'),
+ ('house_seria_P. kara', 'P. kara'),
+ ('house_seria_Priv. m.', 'Priv. m.'),
+ ('house_seria_Renov.', 'Renov.'),
+ ('house_seria_Specpr.', 'Specpr.'),
+ ('house_seria_Staļina', 'Staļina'),
+ ('house_seria_Čehu pr.', 'Čehu pr.')]
 
-house_type = [
-    ('house_type_Brick', 'Brick'),
-    ('house_type_Brick-Panel', 'Brick-Panel'),
-    ('house_type_Masonry', 'Masonry'),
-    ('house_type_Panel', 'Panel'),
-    ('house_type_Panel-Brick', 'Panel-Brick'),
-    ('house_type_Wood', 'Wood')
-]
+house_type = [('house_type_Brick', 'Brick'),
+ ('house_type_Brick-Panel', 'Brick-Panel'),
+ ('house_type_Masonry', 'Masonry'),
+ ('house_type_Panel', 'Panel'),
+ ('house_type_Panel-Brick', 'Panel-Brick'),
+ ('house_type_Wood', 'Wood')]
 
-conditional = [
-    ('condition_All amenities', 'All amenities'),
-    ('condition_Partial amenities', 'Partial amenities'),
-    ('condition_Without amenities', 'Without amenities')
-]
+conditional = [('condition_All amenities', 'All amenities'),
+ ('condition_Partial amenities', 'Partial amenities'),
+ ('condition_Without amenities', 'Without amenities')]
