@@ -54,7 +54,7 @@ SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def hello():
     form = ModelForm(dist='district_Iļģuciems', lat=24.1, lon=56.9)
     output = render_template("main.html", form=form)
